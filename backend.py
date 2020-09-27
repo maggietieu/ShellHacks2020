@@ -27,7 +27,7 @@ class Data:
         if stateName in self.data:
             return self.data[stateName]
         if stateName.lower != stateName and stateName != "":
-            return "Please check make sure to capitalize full state name"
+            return "Please make sure to capitalize full state name"
         return "State not found"
 
     def sortAlphabetical(self):
