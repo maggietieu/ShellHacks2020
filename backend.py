@@ -26,8 +26,9 @@ class Data:
     def getCases(self, stateName):
         if stateName in self.data:
             return self.data[stateName]
-
-        return "0"
+        if stateName.lower != stateName and stateName != "":
+            return "Please check make sure to capitalize full state name"
+        return "State not found"
 
     def sortAlphabetical(self):
         # Will return a dictionary of 50 states
@@ -77,7 +78,6 @@ class Data:
         for case in sorted_cases:
             state_name = flipped_dict.get(case)
             sorted_dict[state_name] = case
-
 
         return sorted_dict
 
