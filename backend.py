@@ -1,6 +1,9 @@
 import requests
 import json
 
+# Data class constructor & getData() credited to TechWithTim
+# https://youtu.be/gJY8D468Jv0
+
 class Data:
     def __init__(self):
         self.API_KEY = "tSfm0WZvoS7w"
